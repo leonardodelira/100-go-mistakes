@@ -9,7 +9,7 @@ import (
 // A variavel client nunca é usada.
 func ExampleError() {
 	tracing := true
-	var client *http.Client
+	//var client *http.Client
 	if tracing {
 		client, err := createClientWithTracing()
 		if err != nil {
