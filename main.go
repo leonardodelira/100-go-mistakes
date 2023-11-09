@@ -1,13 +1,9 @@
 package main
 
-import "fmt"
+import (
+	datatypes "github.com/leonardodelira/100-go-mistakes/2-data-types"
+)
 
 func main() {
-	s1 := make([]int, 3, 6)
-	s2 := s1[1:3]
-
-	s2 = append(s2, 33)
-
-	fmt.Println(s1)
-	fmt.Println(s2)
+	datatypes.ExampleMistake25_CorrectSolution2()
 }
