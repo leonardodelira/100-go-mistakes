@@ -1,9 +1,8 @@
 package main
 
-import (
-	datatypes "github.com/leonardodelira/100-go-mistakes/2-data-types"
-)
+import controlstructs "github.com/leonardodelira/100-go-mistakes/3-control-structs"
 
 func main() {
-	datatypes.ExampleMistake25_CorrectSolution2()
+	controlstructs.ExampleArray()
+	controlstructs.ExampleArray2()
 }
