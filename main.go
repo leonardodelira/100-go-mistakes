@@ -1,8 +1,7 @@
 package main
 
-import controlstructs "github.com/leonardodelira/100-go-mistakes/3-control-structs"
+import strings "github.com/leonardodelira/100-go-mistakes/4-strings"
 
 func main() {
-	controlstructs.LoopSwitchBreakWrong()
-	controlstructs.LoopSwitchBreakCorrect()
+	strings.IterateStringCorrect2()
 }
