@@ -1,7 +1,9 @@
 package main
 
-import strings "github.com/leonardodelira/100-go-mistakes/4-strings"
+import (
+	functionsandmethods "github.com/leonardodelira/100-go-mistakes/5-functions-and-methods"
+)
 
 func main() {
-	strings.IterateStringCorrect2()
+	functionsandmethods.TestReceiverPointer()
 }
