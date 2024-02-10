@@ -24,6 +24,9 @@ func (b ErrorBar) Error() string {
 
 /*
 Para adicionar mais contexto ao nosso erro, basta utilizarmos Errorf.
+Podemos usar duas nomeclaturas para retonar o error, %w e %v.
+%w = passa qual o tipo do erro para o "caller", ou seja nesse caso "ErrorBar"
+%v = não passa o tipo de erro, então o "caller" não vai conseguir saber que se trata de um "ErrorBar"
 */
 func AddContextError() error {
 	err := bar()
