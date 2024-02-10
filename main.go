@@ -1,9 +1,9 @@
 package main
 
 import (
-	functionsandmethods "github.com/leonardodelira/100-go-mistakes/5-functions-and-methods"
+	errormanagement "github.com/leonardodelira/100-go-mistakes/6-error-management"
 )
 
 func main() {
-	functionsandmethods.GoodUsageDefer()
+	errormanagement.CallRecover()
 }
