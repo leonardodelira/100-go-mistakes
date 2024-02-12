@@ -1,9 +1,9 @@
 package main
 
 import (
-	errormanagement "github.com/leonardodelira/100-go-mistakes/6-error-management"
+	concurrencyfoundations "github.com/leonardodelira/100-go-mistakes/7-concurrency-foundations"
 )
 
 func main() {
-	errormanagement.HandlerMock("123")
+	concurrencyfoundations.Gomaxprocs()
 }
