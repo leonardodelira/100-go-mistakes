@@ -1,9 +1,26 @@
 package main
 
 import (
-	concurrencyfoundations "github.com/leonardodelira/100-go-mistakes/7-concurrency-foundations"
+	"fmt"
+	"sync"
 )
 
 func main() {
-	concurrencyfoundations.Gomaxprocs()
+	i := 0
+	var wg sync.WaitGroup
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		i = 1
+	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		i = 2
+	}()
+
+	wg.Wait()
+	fmt.Print(i)
 }
