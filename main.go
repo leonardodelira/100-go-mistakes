@@ -1,26 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"sync"
+	concurrencypractice "github.com/leonardodelira/100-go-mistakes/8-concurrency-practice"
 )
 
 func main() {
-	i := 0
-	var wg sync.WaitGroup
-
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		i = 1
-	}()
-
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		i = 2
-	}()
-
-	wg.Wait()
-	fmt.Print(i)
+	concurrencypractice.ExampleCorrectGoroutineLoop()
 }
