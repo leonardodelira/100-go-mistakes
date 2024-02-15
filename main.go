@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	concurrencypractice.ExampleCorrectGoroutineLoop()
+	concurrencypractice.ProducerMessages()
 }
