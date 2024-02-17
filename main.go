@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	concurrencypractice.TestExample1Mistake66()
+	concurrencypractice.Mistake67_TestUnbufferedChannel()
 }
