@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	concurrencypractice.ProducerMessages()
+	concurrencypractice.TestExample1Mistake66()
 }
