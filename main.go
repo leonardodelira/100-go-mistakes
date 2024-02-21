@@ -24,7 +24,7 @@ func main() {
 
 	go func() {
 		defer wg.Done()
-		account.Mistake70_GoodUseMapMutex_AverageBalance()
+		account.Mistake70_BadUseMapMutex_AverageBalance()
 	}()
 
 	wg.Wait()
